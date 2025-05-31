@@ -5,37 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ninja CSS</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>CSS Ninja!</h1>
-        <p>Transiciones, animaciones, y demás...</p>
+    <header class="header">
+        <h1 class="header__title">CSS Ninja!</h1>
     </header>
-    <section class="contenido">
-        <h2>Posiciones, displays, cajitas:</h2>
-        <div class="caja-flex">
-            <div class="caja-flex__item">1</div>
-            <div class="caja-flex__item">2</div>
-            <div class="caja-flex__item">3</div>
-            <div class="caja-flex__item">4</div>
-            <div class="caja-flex__item">5</div>
-            <div class="caja-flex__item">6</div>
-            <div class="caja-flex__item">7</div>
-            <div class="caja-flex__item">8</div>
-            <div class="caja-flex__item">9</div>
-            <div class="caja-flex__item">10</div>
+    <section class="contenido flex">
+        <h2>Posiciones, displays, animaciones, hovers, de todo!</h2>
+        <p>Hover en las cajas para pausarlas!</p>
+        <div class="carrusel">
+            <div class="caja-flex">
+                <div class="caja-flex__item brilla">Brillo!</div>
+                <div class="caja-flex__item hover">Hover!</div>
+                <div class="caja-flex__item invisible">Aparezco!</div>
+                <div class="caja-flex__item hover">Hover!</div>
+                <div class="caja-flex__item rebotar">Reboto!</div>
+                <div class="caja-flex__item hover">Hover!</div>
+                <div class="caja-flex__item girar">Giro!</div>
+                <div class="caja-flex__item hover">Hover!</div>
+                <div class="caja-flex__item crecer">Crezco!</div>
+            </div>
         </div>
     </section>
-    <section class="contenido">
-        <h2>Efectos visuales</h2>
-        <div class="caja-flex">
-            <div class="caja__brilla"></div>
-            <div class="caja__mover"></div>
-            <div class="caja__rota"></div>
-        </div>
-    </section>
-    <section class="contenido">
-        <h2>Elementos interactivos</h2>
-    </section>
+    <footer class="footer">
+        <ul class="footer__contact">
+            <li><a href="https://github.com/JMoralesNunez/Restaurante">Github</a></li>
+        </ul>
+    </footer>
 </body>
 </html>
